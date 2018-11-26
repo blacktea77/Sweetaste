@@ -1,0 +1,1757 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+.clearFix{
+    clear: both;
+}
+/*layout*/
+.wrap{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header */
+.main-lg{
+    display: flex;
+    justify-content: space-between;
+}
+.main-sm,.sweet-eat-title-sm{
+    display: none;
+}
+.logo{
+    width: 219px;
+    height: 100px;
+    display: inline-block;
+}
+.logo-h1{
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: url('/作品/甜點電商/img/logo-all-dark.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 219px;
+    height: 100px;
+}
+.sweet-main a{
+    font-size: 16px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    color:#3F5D45;
+    text-decoration: none;
+}
+.sweet-main{
+    display: flex;
+}
+.sweet-main li:hover,.sweet-main a:hover{
+    background-color: #3F5D45;
+    color:#fff;
+    transition: all 0.5s;
+}
+/* footer */
+.sweet-footer{
+    height: 341px;
+    background-color: #EAF0ED;
+}
+.footer-content{
+    position: relative;
+    height: 100%;
+}
+.footer-logo{
+    background-image: url(/作品/甜點電商/img/logotype.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 150px;
+}
+.footer-about{
+    position: absolute;
+    bottom: 25%;
+    line-height: 30px;
+    color: #3F5D45;
+}
+.footer-icon{
+    position: absolute;
+    bottom: 5%;
+    display: inline;
+}
+.footer-icon li{
+    display: inline;
+}
+.footer-icon-line{
+    background-image: url(/作品/甜點電商/img/ic-line@.svg);
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.footer-icon-facebook{
+    background-image: url(/作品/甜點電商/img/ic-facebook.svg);
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.footer-today{
+    background-image: url(/作品/甜點電商/img/sm-今天是個吃甜點的好日子.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    right: 5%;
+    height: 100%;
+    width: 59px;
+}
+.footer-rights{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    color: #3F5D45;
+}
+/*index*/
+/* banner */
+.banner{
+    background-image: url(/作品/甜點電商/img/banner/banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.product-banner{
+    background-image: url(/作品/甜點電商/img/banner/banner-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.success-banner{
+    background-image: url(/作品/甜點電商/img/banner/banner-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+    height: 500px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/*banner-slider*/
+.banner-slider-logo{
+    background-image: url(/作品/甜點電商/img/logo-all-dark.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 3%;
+}
+/*slider*/
+.banner-slider{
+    margin-bottom: 5%;
+}
+/*center-main*/
+.center-main{
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+.btn-main{
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    letter-spacing: 10px;
+    transform: translateY(-40%);
+    writing-mode: vertical-lr;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+.btn-main a{
+    background-color: rgba(63, 93, 69, 0.8);
+    color:#fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+}
+.btn-main a:hover{
+    background-color: rgba(255, 255, 128 , .8);
+    color:#3F5D45;
+    border-radius: 5px;
+    transition: all 0.6s;
+}
+.btn-main a.active{
+    background-color: rgba(255, 255, 128 , .8);
+    color:#3F5D45;
+}
+.bg-btn-main:nth-child(1){
+    background-image: url(/作品/甜點電商/img/btn-main/btn-main-1.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.bg-btn-main:nth-child(2){
+    background-image: url(/作品/甜點電商/img/btn-main/btn-main-2.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.bg-btn-main:nth-child(3){
+    background-image: url(/作品/甜點電商/img/btn-main/btn-main-3.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+/* sweet-why */
+.sweet-why,.sweet-eat{
+    position: relative;
+    margin-bottom: 10%;
+    height: 430px;
+}
+.sweet-why-bg,.sweet-eat-bg{
+    position: absolute;
+    background-color: #EAF0ED;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.sweet-why-text,.sweet-eat-text{
+    position: relative;
+    height: 400px;
+}
+.sweet-why-title{
+    position: absolute;
+    width: 122px;
+    top: -8%;
+    right: 20%;
+}
+.sweet-why p{
+    position: absolute;
+    color: #3F5D45;
+    font-weight: bold;
+    top: 8%;
+    right: 34%;
+    writing-mode: vertical-rl;
+    line-height: 30px;
+}
+.sweet-why-img{
+    background-image: url(/作品/甜點電商/img/reason1.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 382px;
+    height: 500px;
+    top: -10%;
+    left: 18%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.3s; 
+}
+.sweet-why-img:hover,.sweet-eat-img:hover{
+    box-shadow: 5px 5px 5px gray;
+    transition: all 0.5s; 
+}
+/* sweet-eat */
+.sweet-eat-title{
+    position: absolute;
+    width: 122px;
+    top: -8%;
+    left: 42%;
+}
+.sweet-eat p{
+    position: absolute;
+    color: #3F5D45;
+    font-weight: bold;
+    top: 8%;
+    left: 20%;
+    writing-mode: vertical-rl;
+    line-height: 30px;
+}
+.sweet-eat-img{
+    background-image: url(/作品/甜點電商/img/reason2.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    width: 382px;
+    height: 500px;
+    top: -10%;
+    right: 18%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.3s; 
+}
+/*sweet-reason*/
+.reason{
+    margin-bottom: 10%;
+}
+.sweet-reason-img{
+    height: 365px;
+}
+/*choice*/
+.choice{
+    margin-bottom: 5%;
+}
+.choice ul li{
+    display: inline-block;
+}
+.choice-list{
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    width: 287px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.3s;
+}
+.choice-list:hover{
+    box-shadow: 5px 5px 10px gray;
+    transition: all 0.5s;
+}
+.choice-list img{
+    border-radius: 5px;
+}
+.choice-list .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    writing-mode: vertical-lr;
+    background-color: #3F5D45;
+    color: #fff;
+    width: 30px;
+    height: 121px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.choice-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #3F5D45;
+
+}
+.choice-text .title{
+    border:1px solid #EAF0ED;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+}
+.choice-text .info{
+    font-weight: bold;
+    border:1px solid #EAF0ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 40px;
+}
+.btn-hex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EAF0ED;
+    height: 40px;
+    text-decoration: none;
+    color:#3F5D45;
+    font-size:20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+.btn-hex:hover{
+    color:#fff;
+    background-color: #3F5D45;
+    transition: all 0.8s;
+    letter-spacing: 5px;
+}
+/* subscribe */
+.subscribe{
+    background: #3F5D45;
+    height: 116px;
+}
+.subscribe-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.subscribe-title{
+    color:#fff;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.subscribe-title img{
+    height: 40px;
+    width: 40px;
+}
+.subscribe-form{
+display: inline-flex;
+}
+.subscribe-email-title{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 50px;
+    border: 0;
+    background-color:#fff;
+    color:#3F5D45;
+}
+.subscribe-email{
+    height: 50px;
+    width: 300px;
+    border: 0;
+}
+.subscribe-btn{
+    height: 50px;
+    width: 60px;
+    border: 0;
+    cursor:pointer;
+    background-color:#FFE180;
+    color:#3F5D45;
+    transition: all 0.5s;
+}
+.subscribe-btn:hover{
+    background-color:#3F5D45;
+    border: 1px solid #fff;
+    color:#fff;
+    transition: all 0.5s;
+}
+/*product*/
+.product{
+    margin-bottom: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-content{
+    width: 66.555%;
+}
+.product-content li{
+    display: inline-block;
+}
+.product-list{
+    margin: 0 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    width: 287px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.3s;
+}
+.product-list:hover{
+    box-shadow: 5px 5px 10px gray;
+    transition: all 0.5s;
+}
+.product-list img{
+    border-radius: 5px;
+}
+.product-list .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    writing-mode: vertical-lr;
+    background-color: #3F5D45;
+    color: #fff;
+    width: 30px;
+    height: 121px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.product-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #3F5D45;
+
+}
+.product-text .title{
+    border:1px solid #EAF0ED;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+}
+.product-text .info{
+    font-weight: bold;
+    border:1px solid #EAF0ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    height: 40px;
+}
+.product-main{
+    width: 33.53%;
+    text-align: center;
+}
+.product-main-title{
+    background-color: #3F5D45;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.product-main-content li{
+    border:1px solid #EAF0ED;
+}
+.product-main-content a{
+    background-color: #ffffff;
+    color: #3F5D45;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.5s
+}
+.product-main-content a.active{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+}
+.product-main-content a:hover{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    transition: all 0.5s
+}
+.product-page{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.product-page a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #3F5D45;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #fff;
+    border:1px solid #EAF0ED;
+    text-decoration: none;
+    transition: all 0.5s
+}
+.product-page a.active{
+   background-color: #3F5D45;
+   color: #fff;
+}
+.product-page a:hover{
+    background-color: #3F5D45;
+    color: #fff;
+    transition: all 0.5s
+ }
+ /*login*/
+ .login{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 5%;
+     margin-top: 5%;
+ }
+ .login-form{
+     text-align: center;
+     border:1px solid #3F5D45;
+     background-color: #3F5D45;
+     width: 390px;
+     margin: 0;
+ }
+ .form-title{
+     color:#fff;
+     margin: 40px auto;
+     font-size: 36px;
+     font-weight: bold;
+ }
+ .form-ground {
+    position: relative;
+ }
+ .form-ground input{
+     width: 330px;
+     height: 56px;
+     padding-left: 20%;
+     margin:10px; 
+     color: #8DA291;
+     font-size:16px;
+     font-weight: bold;
+     background-color: #EAF0ED;
+     border:0
+ }
+ .form-ground input:focus{
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+ .form-ground i.fas{
+     position: absolute;
+     top: 42%;
+     left:15%;
+     color:#3F5D45;
+ }
+ .Community-login{
+     display: inline;
+ }
+ .ckeckbox-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 7%;
+    text-align: left;
+    color:#fff;
+    font-weight: bold;
+ }
+ .ckeckbox-form input{
+    width: 16px;
+    height: 16px;
+    color:#EAF0ED;
+ }
+ .btn-form{
+     background-color: #FFE180;
+     color: #3F5D45;
+     width: 100%;
+     height: 65px;
+     border: 0;
+     font-size: 24px;
+     font-weight: bold;
+     transition: all 0.5s;
+     cursor:pointer;
+ }
+ .btn-form:hover{
+    background-color: #3F5D45;
+    color: #FFE180;
+    border: 1px solid #fff;
+    transition: all 0.5s;
+}
+/* Community */
+.Community-login-icon{
+    background-color: #EAF0ED;
+    width: 390px;
+    height: 350px;
+    text-align: center;
+}
+.Community-title{
+    display: block;
+    font-size: 24px;
+    width: 100%;
+    color:#8DA291;
+    margin: 11% auto;
+}
+.Community-login-icon ul li{
+    background-color: #fff;
+    margin: 30px;
+    padding:10px;
+}
+a.Community-btn-facebook{
+    display: block;
+    background-image: url(/作品/甜點電商/img/ic-facebook-logotype.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 24px;
+    
+}
+a.Community-btn-google{
+    display: block;
+    background-image: url(/作品/甜點電商/img/ic-google.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 24px;
+}
+a.Community-btn-yahoo{
+    display: block;
+    background-image: url(/作品/甜點電商/img/ic-yahoo.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 24px;
+}
+/*cart*/
+.cart{
+    display: flex;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.cart-content{
+    width: 70%;
+}
+.cart-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.cart-body{
+    display: flex;
+    margin:50px auto;
+    border: 1px solid #EAF0ED;
+}
+.cart-body:hover{
+    box-shadow: 2px 2px 5px #8DA291;
+}
+.cart-body img{
+    width: 110px;
+    height: 110px;
+}
+.cart-name{
+    margin: auto 20px;
+    font-size: 20px;
+    color:#3F5D45;
+}
+.cart-name li{
+    padding: 5px 0;
+}
+.cart-math{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2%;
+}
+.cart-math li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #EAF0ED;
+    width: 48px;
+    height: 48px;
+    color:#3F5D45;
+    cursor:pointer
+}
+.cart-math .active{
+    background-color: #EAF0ED;
+    transition: all 0.5s;
+}
+.cart-math .active:hover{
+    background-color: #3F5D45;
+    color: #EAF0ED;
+    transition: all 0.5s;
+}
+.money{
+    margin: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #3F5D45;
+}
+.cart-body i.fas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19%;
+    color:#3F5D45;
+    cursor:pointer;
+    transition: all 0.5s
+}
+.cart-body i.fas:hover{
+    background-color: #3F5D45;
+    color:#EAF0ED;
+    transition: all 0.5s
+}
+.cart-checkout-lg{
+    display: flex;
+    width: 100%;
+}
+.cart-checkout-sm{
+    display: none;
+}
+.detail{
+    width: 30%;
+    padding: 0 20px;
+}
+.detail-content{
+    background-color: #3F5D45;
+}
+.detail-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.detail-hr{
+    width: 80%;
+    border: 2px solid #EAF0ED;
+    margin: 0 auto;
+}
+.detail-body{
+    padding: 0 20px;
+}
+.detail-list{
+    color:#EAF0ED;
+}
+.detail-list li{
+    display: flex;
+    height: 40px;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail-list .total{
+    font-size: 20px;
+    font-weight: bold;
+}
+a.btn-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE180;
+    color: #3F5D45;
+    font-size: 24px;
+    height: 65px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+a.btn-detail:hover{
+    background-color: red;
+    color: #fff;
+    font-size: 24px;
+    transition: all 0.5s;
+ }
+ /* checkout */
+ .checkout-1,.checkout-2,.checkout-3{
+     display: flex;
+     margin-bottom: 5%;
+     margin-top: 5%;
+ }
+ .process{
+     position: relative;
+ }
+ .process-success{
+    position: absolute;
+    top: 25%;
+    left: 44%;
+ }
+ .process .fa-circle,.process .fa-check-circle{
+     margin-right: 20px;
+     color:#EAF0ED;
+ }
+ .process-success .fa-check-circle{
+     margin-right: 20px;
+     color:#3F5D45;
+ }
+ .line{
+    border-top: 2px solid #EAF0ED;
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    left: 13%;
+    top: 50%;
+ }
+ .line-2{
+    border-top: 2px solid #EAF0ED;
+    height: 100%;
+    width: 26px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+ }
+ .line-success{
+    border-top: 2px solid #EAF0ED;
+    height: 100%;
+    width: 25px;
+    position: absolute;
+    left: 13%;
+    top: 50%;
+ }
+ .line-success-2{
+    border-top: 2px solid #EAF0ED;
+    height: 100%;
+    width: 26px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+ }
+ .checkout-form{
+     background-color: #3F5D45;
+     width: 66%;
+     height: 100%;
+ }
+ .checkout-form-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+ }
+ .checkout-h3{
+     font-size: 36px;
+     color:#EAF0ED;
+     font-weight: bold;
+ }
+ .checkout-form-title ol li{
+    display: inline;
+    color:#fff;
+    margin-right: 50px;
+ }
+ .name-groud{
+     display: flex;
+     padding-left:5%;
+     padding-right: 5%;
+ }
+.lastName, .fristName{
+    width: 50%;
+    padding-left:1%;
+    padding-right: 1%;
+    margin-bottom: 20px;
+}
+.area-groud{
+    padding-left:6%;
+    padding-right: 6%;
+}
+.area-groud select{
+    width: 49.5%;
+    color:#3F5D45;
+    height: 56px;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.tel-groud, .addr-groud{
+    padding-left:6%;
+    padding-right: 6%;
+    margin-bottom: 20px;
+}
+.fristName label,.lastName label,.tel-groud label,.area-groud label{
+    display: block;
+    font-size: 20px;
+    color:#EAF0ED;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.lastName input,.fristName input,.tel-groud input,.addr-groud input{
+    width: 100%;
+    height: 56px;
+    border:0;
+    padding:20px;
+}
+/*order*/
+ .order{
+     width: 37%;
+     padding-left: 10px;
+ }
+ .orderList{
+     margin-bottom: 20px;
+ }
+ .order-total,.order-total-money{
+     color:#8DA291;
+     font-size:20px;
+     font-weight: bold;
+     margin-bottom:10px;
+ }
+.summary-title,.order-cart-title{
+    background-color: #EAF0ED;
+    font-size: 24px;
+    color: #8DA291;
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-summary{
+    border:1px solid #EAF0ED;
+}
+.order li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 25px;
+    font-size: 16px;
+    color:#8DA291;
+}
+.order-money-list li{
+    padding-top:5px;
+    font-weight: bold;
+}
+.order-img img{
+    width: 120px;
+    height: 80px;
+}
+ /* checkout-2 */
+.checkout-2-form{
+    background-color: #3F5D45;
+    width: 66%;
+    height: 100%;
+}
+.checkout-2-form-title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 50px;
+}
+.checkout-form-title ol li{
+   display: inline;
+   color:#fff;
+   margin-right: 50px;
+}
+.card-name-groud,.card-name{
+    display: flex;
+    padding-left:5%;
+    padding-right: 5%;
+}
+.lastName, .fristName{
+   width: 50%;
+   padding-left:1%;
+   padding-right: 1%;
+   margin-bottom: 20px;
+}
+.date-groud{
+   padding-left:6%;
+   padding-right: 6%;
+}
+.date-groud select{
+   width: 49.5%;
+   color:#3F5D45;
+   height: 56px;
+   padding:20px;
+   margin-bottom: 10px;
+}
+.card-groud{
+   position: relative;
+   padding-left:6%;
+   padding-right: 6%;
+   margin-bottom: 20px;
+}
+.card-groud .fa-credit-card{
+    position: absolute;
+    top: 60%;
+    right:10%;
+}
+.back-groud{
+    display: flex;
+    padding-left:6%;
+    padding-right: 6%;
+    margin-bottom: 20px;
+}
+.card-name-groud label,
+.card-groud label,
+.date-groud label,
+.backName label,
+.card-name{
+   display: block;
+   font-size: 20px;
+   color:#EAF0ED;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.backName input,
+.card-groud input{
+   width: 100%;
+   height: 56px;
+   border:0;
+   padding:20px;
+}
+ /* checkout-3 */
+.checkout-e-form{
+    background-color: #3F5D45;
+    width: 66%;
+    height: 100%;
+}
+.checkout-e-form-title{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 50px;
+}
+.checkout-form-title ol li{
+   display: inline;
+   color:#fff;
+   margin-right: 50px;
+}
+.card-name-groud,.card-name{
+    display: flex;
+    padding-left:5%;
+    padding-right: 5%;
+}
+.invoice-groud{
+    display: flex;
+    padding-left:5%;
+    padding-right: 5%;
+    height: 56px;
+    margin-bottom: 20px;
+}
+.btn-e-invoice,.btn-invoice-addr{
+    width: 50%;
+    padding-left:1%;
+    padding-right: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #EAF0ED;
+    color:#EAF0ED;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.btn-invoice:hover,.btn-invoice-addr:hover,a.active{
+    background-color: #EAF0ED;
+    color: #3F5D45;
+    transition: all 0.5s;
+    
+}
+
+.email-groud,.number-groud{
+   padding-left:6%;
+   padding-right: 6%;
+   margin-bottom: 20px;
+}
+.number-groud label,
+.email-groud label,
+.card-name,
+.invoice-addr label,
+.invoice-addr span{
+   display: inline-block;
+   font-size: 20px;
+   color:#EAF0ED;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.email-groud input,
+.number-groud input{
+   width: 100%;
+   height: 56px;
+   border:0;
+   padding:20px;
+}
+/*success*/
+.message-success{
+    position: absolute;
+    background-image: url(/作品/甜點電商/img/lg-付款成功.svg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 189px;
+    height: 46px;
+    top: 40%;
+    left: 39.5%;
+}
+.btn-success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 33.5%;
+    background-color: #FFE180;
+    color: #3F5D45;
+    font-size: 24px;
+    width: 300px;
+    height: 65px;
+    text-decoration: none;
+}
+.btn-success:hover{
+    background-color: #3F5D45;
+    color: #FFE180;
+}
+.d-none{
+    display: none;
+}
+.area-invoice-groud{
+    padding-left:6%;
+    padding-right: 6%;
+}
+.area-invoice-groud select{
+    display: flex;
+    width: 100%;
+    color:#3F5D45;
+    height: 56px;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.invoice-addr{
+    display: inline-block;
+    width: 49%;
+}
+@media (max-width: 1200px) {
+    /*index*/
+    .sweet-why-img{
+        left: 10%;
+    }
+    .sweet-eat-img{
+        right: 10%;
+    }
+ }
+ @media (max-width: 992px) { 
+     /*index*/
+    .sweet-why{
+        height: 100%;
+        display: flex;
+    }
+    .sweet-eat{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+    .sweet-why-title,.sweet-eat-title{
+        display: none;
+    }
+    .sweet-why p,.sweet-eat p{
+        position: relative;
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+        writing-mode: unset;
+        padding: 28px;
+        color:#8DA291;
+    }
+    .sweet-why-img,.sweet-eat-img{
+        position: relative;
+        width: 382px;
+        height: 500px;
+        top: 0;
+        left: 0;
+        width: 375px;
+        height: 250px;
+    }
+    .banner-slider{
+        display: none;
+    }
+    .subscribe-title{
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
+    .subscribe-form{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }
+ @media (max-width: 768px) { 
+    .main-sm{
+        display: none;
+    }
+    /*index*/
+    .btn-main a{
+        border-radius: 0px;
+    }
+    .sweet-eat-title-sm{
+        width: 196px;
+        height: 60px;
+        display: block;
+        margin: 10% auto;
+    }
+    .sweet-why{
+        height: 100%;
+        display: flex;
+    }
+    .sweet-eat{
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    }
+    .sweet-why-title,.sweet-eat-title{
+        display: none;
+    }
+    .sweet-why p,.sweet-eat p{
+        position: relative;
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+        writing-mode: unset;
+        padding: 28px;
+        color:#8DA291;
+    }
+    .sweet-why-img,.sweet-eat-img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 375px;
+        height: 250px;
+    }
+    .sweet-reason-img,.banner-slider{
+        display: none;
+    }
+    .choice ul li{
+        display: inline;
+    }
+    .choice-list{
+        width: 29.99998%;
+    }
+    .subscribe{
+        height: 100%;
+    }
+    .subscribe-content{
+        display: block;
+    }
+    /* product*/
+    .product-banner{
+        height: 227px;
+    }
+    .product{
+        display: block;
+    }
+    .product-main{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-content .product-list-sm {
+        display: none;
+    }
+    .product-list{
+        width: auto;
+    }
+    .product-content{
+        width: 100%;
+    }
+    .product-content ul{
+        display: flex;
+    }
+    /*cart*/
+    .cart{
+        display: block;
+    }
+    .cart-content{
+        width: 100%;
+    }
+    .cart-checkout-lg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .cart-checkout-sm-body{
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .money-sm{
+        border-top: 1px solid #EAF0ED;
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        color: #3F5D45;
+        padding: 15px;
+        width: 100%;
+    }
+    .detail{
+        width: 100%;
+        padding: 0;
+    }
+    /*check*/
+    .checkout-form,.checkout-2-form,.checkout-e-form{
+        width: 100%;
+    }
+    .date-groud select{
+        width: 49.6%;
+    }
+    .order{
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    /*layout*/
+    .main-sm{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        width: 100%;
+    }
+    .main-sm a{
+        text-decoration: none;
+        color:#8DA291;
+        height: 50px;
+        font-size: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-lg,.sweet-main,.footer-today{
+        display: none;
+    }
+    .sweet-main-sm li{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 44px; 
+    }
+    .sweet-main-sm a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:#3F5D45;
+        color: #fff;
+        width: 100%;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none
+    }
+    .sweet-main-sm a:active{
+        background-color:#FFE180;
+        color: #3F5D45;
+    }
+    .logo-sm{
+        display: block;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-image: url('/作品/甜點電商/img/logotype-sm-dark.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 114px;
+        height: 17px;
+    }
+    .footer-logo{
+        margin: 0 20px;
+    }
+    .sweet-footer{
+        height: 100%;
+    }
+    .footer-about,.footer-icon,.footer-rights{
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 20px;
+    }
+    .footer-content{
+        margin: 0px auto;
+    }
+    /*index*/
+    .banner{
+        height: 227px;
+    }
+    .bg-btn-main:nth-child(1){
+        border-radius: 0px;
+    }
+    .bg-btn-main:nth-child(2){
+        border-radius: 0px;
+    }
+    .bg-btn-main:nth-child(3){
+        border-radius: 0px;
+    }
+    .btn-main{
+        width: 125px;
+        height: 180px;
+        transform: translateY(0%);
+        margin:0;
+    }
+    .btn-main a{
+        border-radius: 0px;
+    }
+    .banner-slider{
+        display: none;
+    }
+    .sweet-eat-title-sm{
+        width: 196px;
+        height: 60px;
+        display: block;
+        margin: 10% auto;
+    }
+    .sweet-why, .sweet-eat{
+        height: 100%;
+        display: block;
+    }
+    .sweet-why-title,.sweet-eat-title{
+        display: none;
+    }
+    .sweet-why p,.sweet-eat p{
+        position: relative;
+        top: 0;
+        left: 0;
+        right:0;
+        width: 100%;
+        writing-mode: unset;
+        padding: 28px;
+        color:#8DA291;
+    }
+    .sweet-why-img,.sweet-eat-img{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+    }
+    .sweet-reason-img{
+        display: none;
+    }
+    .choice-list{
+        width: 90%;
+    }
+    .choice ul .choice-list-sm{
+        display: none;
+    }
+    .subscribe{
+        height: 100%;
+    }
+    .subscribe-content{
+        display: block;
+    }
+    .subscribe-title{
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+    }
+    .subscribe-form{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* product*/
+    .product-banner{
+        height: 227px;
+    }
+    .product{
+        display: block;
+    }
+    .product-main{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .product-content .product-list-sm {
+        display: none;
+    }
+    .product-list{
+        width: auto;
+    }
+    .product-content{
+        width: 100%;
+    }
+    /*login*/
+    .login{
+        display: block;
+        padding: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .Community-login-icon{
+        display: none;
+    }
+    .Community-login-icon-sm{
+        background-color: #EAF0ED;
+    }
+    .Community-login-icon-sm ul{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        height: 108px;
+    }
+    .Community-login-icon-sm ul li{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        margin: 10px 1px;
+    }
+    
+    a.Community-btn-facebook-sm{
+        display: inline-block;
+        background-image: url(/作品/甜點電商/img/ic-facebook-logotype.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 100px;
+    }
+    a.Community-btn-google-sm{
+        display: inline-block;
+        background-image: url(/作品/甜點電商/img/ic-google.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 30px;
+        width: 100px;
+    }
+    a.Community-btn-yahoo-sm{
+        display: inline-block;
+        background-image: url(/作品/甜點電商/img/ic-yahoo.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+        height: 30px;
+        width: 100px;
+    }
+    .login-form{
+        width: 100%;
+    }
+    /*cart*/
+    .cart{
+        display: block;
+    }
+    .cart-content{
+        width: 100%;
+    }
+    .cart-checkout-lg{
+        display: none;
+    }
+    .cart-checkout-sm{
+        width: 100%;
+        display: block;
+    }
+    .cart-checkout-sm-body{
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .money-sm{
+        border-top: 1px solid #EAF0ED;
+        display: block;
+        text-align: right;
+        font-size: 20px;
+        color: #3F5D45;
+        padding: 15px;
+        width: 100%;
+    }
+    .detail{
+        width: 100%;
+        padding: 0;
+    }
+    /*checkout-1*/
+    .checkout-1, .checkout-2, .checkout-3{
+        display: block;
+    }
+    .checkout-form,.checkout-2-form,.checkout-e-form{
+        width: 100%;
+    }
+    .area-groud select,.date-groud select{
+        width: 48.5%;
+    }
+    .order{
+        display: none;
+    }
+    /*.success*/
+    .success-banner{
+        margin: 0;
+    }
+    .message-success{
+        position: relative;
+        background-size: contain;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top:50%;
+        left:0;
+    }
+    .btn-success{
+        position: relative;
+        left:0;
+        width: auto;
+    }
+    .process-success{
+        top: 33%;
+        left: 37%;
+    }
+}
+
+
+
+
+
